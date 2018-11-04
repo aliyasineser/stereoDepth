@@ -230,6 +230,7 @@ pip-selfcheck.json
 
 
 #Data
-./data
+data/
+
 
 # End of https://www.gitignore.io/api/code,python,opencv,pycharm
