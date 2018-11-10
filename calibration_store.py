@@ -1,5 +1,6 @@
 import cv2
 
+
 def save_coefficients(mtx, dist, path):
     """ Save the camera matrix and the distortion coefficients to given path/file. """
     cv_file = cv2.FileStorage(path, cv2.FILE_STORAGE_WRITE)
@@ -27,6 +28,7 @@ def save_stereo_coefficients(path, K1, D1, K2, D2, R, T, E, F, R1, R2, P1, P2, Q
     cv_file.write("Q", Q)
     cv_file.release()
 
+
 def load_coefficients(path):
     """ Loads camera matrix and distortion coefficients. """
     # FILE_STORAGE_READ
@@ -40,8 +42,9 @@ def load_coefficients(path):
     cv_file.release()
     return [camera_matrix, dist_matrix]
 
+
 def load_stereo_coefficients(path):
-    """ Loads camera matrix and distortion coefficients. """
+    """ Loads stereo matrix coefficients. """
     # FILE_STORAGE_READ
     cv_file = cv2.FileStorage(path, cv2.FILE_STORAGE_READ)
 
