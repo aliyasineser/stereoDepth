@@ -2,7 +2,7 @@
 
 
 
-This project is a basis for stereo vision.  After calibration process, you can try to get disparity map and start your own project. 
+This project is a basis for stereo vision.  After calibration process, you can try to get disparity map and start your own project. You can check [my blog](https://medium.com/@aliyasineser) if you are new to stereo vision. I wrote about what is stereo vision and how it works briefly. 
 
 ## Usage
 
